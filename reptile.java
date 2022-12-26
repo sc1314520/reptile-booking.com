@@ -35,6 +35,7 @@ public class reptile {
             name = document.select("div[data-testid='property-card'] div[data-testid='title']");
             cost = document.select("div[data-testid='property-card'] span[data-testid='price-and-discounted-price']");
             for(int i =0;i<name.size();i++){
+                // 去除重複的旅館
                 if(name.get(i).text().equals("夢也．墾丁包棟民宿")){
                     continue;
                 }
